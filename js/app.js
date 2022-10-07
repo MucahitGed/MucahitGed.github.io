@@ -16,7 +16,7 @@ const int = setInterval(()=>{
         body.style.backgroundColor = "white"
         main.style.display = "flex";
     }
-} , 0)
+} , 40)
 
 let timeout_p = setTimeout(() => {
     document.querySelector(".home-header").style.visibility = "visible";
