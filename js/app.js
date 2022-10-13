@@ -16,7 +16,7 @@ const int = setInterval(()=>{
         body.style.backgroundColor = "white"
         main.style.display = "flex";
     }
-} , 40)
+} , 0)
 
 let timeout_p = setTimeout(() => {
     document.querySelector(".home-header").style.visibility = "visible";
@@ -107,13 +107,75 @@ skills.forEach((skill, idx) => {
     }})
 })
 
-
+projectPrinter()
 function projectPrinter(){
-    let project_div= `
-    <a href="" class="project">
-    <div class="content"></div>
-    </a>
-    `
+    const name = [
+        "Macapa Coffee",
+        "Guitarizm",
+        "Game Of Life",
+        "Deluxe Hotel",
+        "Dark Mode Clock",
+        "Tic Tac Toe",
+        "Rock-Paper-Scissors",
+        "Movie App",
+        "Pinterest Clone",
+        "Meditation App"
+    ]
+
+    const codes = [
+        "https://github.com/MucahitGed/coffee-shop",
+        "https://github.com/MucahitGed/Guitar-Shop",
+        "https://github.com/MucahitGed/Game-of-life",
+        "https://github.com/MucahitGed/hotel-site",
+        "https://github.com/MucahitGed/dark-mode-clock-with-js",
+        "https://github.com/MucahitGed/tic-tac-toe",
+        "https://github.com/MucahitGed/Rock-paper-scissors",
+        "https://github.com/MucahitGed/Movie-App",
+        "https://github.com/MucahitGed/Pinterest-Clone",
+        "https://github.com/MucahitGed/meditatin-app-with-js"
+    ]
+    const links  = [
+        "https://macapa-coffee.netlify.app/",
+        "https://guitarizm.netlify.app",
+        "https://game-of-lifee.netlify.app",
+        "https://deluxe-hotel-site.netlify.app",
+        "https://dark-mode-clock.netlify.app",
+        "https://tic-tac-toer.netlify.app",
+        "https://rock-paperr.netlify.app",
+        "https://movie-aapp.netlify.app",
+        "https://pinterest-clonee.netlify.app",
+        "https://meditation-ap.netlify.app/"
+    ]
+    
+    const pics = [
+        "../img/coffee.png",
+        "../img/guitarizm.png",
+        "../img/life.png",
+        "../img/hotel.png",
+        "../img/clock.png",
+        "../img/xox.png",
+        "../img/rock-paper.png",
+        "../img/movie.png",
+        "../img/pinterest.png",
+        "../img/medi.png"
+    ]
+    for(let i = 0; i < 14 ; i++){
+        let project_div= `
+        <div class="content">
+            <img src=${pics[i]} alt="">
+            <h3 class="title-content">${name[i]}</h3>
+          <div class="buttons">
+                <a href=${links[i]} class="visit-btn" target="_blank">Visit</a>
+                <a href=${codes[i]} class="code-btn" target="_blank">Code</a>
+          </div>
+        </div>
+        `
+        project_content.insertAdjacentHTML('beforeend' , project_div)
+        
+    }
+    
+
+    
 }
 
 

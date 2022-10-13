@@ -63,6 +63,7 @@
     color: #fff;
     top: 40%;
     left: 10%;
+    
 }
 .home-content h1{
     font-size: 6rem;
@@ -153,14 +154,14 @@ span{
 }
 .projects-header{
     position: absolute;
-    top: 650px;
+    top: 75rem;
 }
 /* fair good weak */
 
 /*projects*/
 .project-bg{
     position: absolute;
-    background: #777;
+    background: var(--cyber-color);
     height: 100%;
     width: 100%;
     filter: blur(15px);
@@ -168,7 +169,7 @@ span{
 .projects{
     height: 100vh;
     width: 100%;
-    position: relative;
+    
 }
 .projects-content{
     display: flex;
@@ -179,25 +180,71 @@ span{
     width: 100%;
     filter: brightness(10px);
 }
-.projects-content .project .content{
-    background-color: #000;
+/* .projects-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
     height: 25rem;
     width: 25rem;
-    filter: blur(0);margin: 10px;
-}
-.projects-content .project .content:hover{
-    height: 600px;
-    width: 600px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
     filter: blur(0);
-    z-index: 2;
+    margin: 10px;
+} */
+
+.projects-content .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25rem;
+    width: 25rem;
+    filter: blur(0);
+    margin: 10px;
+    color: var(--light-grey);
 }
-.projects-content .project .content img{
+.projects-content .content:hover{
+    transform: scale(1.75); 
+    filter: blur(0);
+    z-index: 1;
+}
+.projects-content .content img{
+    position: absolute;
     height: 100%;
     width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.projects-content .content h3{
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    z-index: 5;
+}
+.projects-content .content .buttons{
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    z-index: 5;
+}
+.projects-content .content .buttons .visit-btn{
+    padding: 8px 15px;
+    margin: 10px;
+    background-color: var(--cyber-color);
+    border-radius: 5px;
+    color: #fff;
+}
+.projects-content .content .buttons .code-btn{
+    padding: 8px 15px;
+    background-color: var(--light-grey);
+    margin: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+.projects-content .content .buttons .visit-btn:hover{
+    transform: scale(.90);
+}
+.projects-content .content .buttons .code-btn:hover{
+    transform: scale(.96);
 }
 /*footer*/
 .contact{
