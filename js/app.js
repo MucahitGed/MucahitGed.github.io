@@ -5,7 +5,9 @@ const main = document.querySelector(".main")
 const skills = document.querySelectorAll(".skill")
 const project_content = document.querySelector(".projects-content");
 const contact_contents = document.querySelectorAll(".contact-content")
+const resume = document.querySelector(".resume");
 let load = 0;
+
 const int = setInterval(()=>{
     loading.innerHTML = `${load}%`
     load++;
@@ -17,6 +19,10 @@ const int = setInterval(()=>{
         main.style.display = "flex";
     }
 } , 40)
+
+resume.addEventListener('click' , ()=>{
+    window.open('../img/png2pdf.pdf')
+})
 
 let timeout_p = setTimeout(() => {
     document.querySelector(".home-header").style.visibility = "visible";
@@ -119,7 +125,9 @@ function projectPrinter(){
         "Rock-Paper-Scissors",
         "Movie App",
         "Pinterest Clone",
-        "Meditation App"
+        "Meditation App",
+        "Github Finder",
+        "Quiz App"
     ]
 
     const codes = [
@@ -132,7 +140,9 @@ function projectPrinter(){
         "https://github.com/MucahitGed/Rock-paper-scissors",
         "https://github.com/MucahitGed/Movie-App",
         "https://github.com/MucahitGed/Pinterest-Clone",
-        "https://github.com/MucahitGed/meditatin-app-with-js"
+        "https://github.com/MucahitGed/meditatin-app-with-js",
+        "https://github.com/MucahitGed/Github-Account-Finder-App",
+        "https://github.com/MucahitGed/react-quiz"
     ]
     const links  = [
         "https://macapa-coffee.netlify.app/",
@@ -144,7 +154,9 @@ function projectPrinter(){
         "https://rock-paperr.netlify.app",
         "https://movie-aapp.netlify.app",
         "https://pinterest-clonee.netlify.app",
-        "https://meditation-ap.netlify.app/"
+        "https://meditation-ap.netlify.app/",
+        "https://github-account-finder-app.netlify.app/",
+        "https://reactjs-quizz.netlify.app/"
     ]
     
     const pics = [
@@ -152,29 +164,49 @@ function projectPrinter(){
         "../img/guitarizm.png",
         "../img/life.png",
         "../img/hotel.png",
-        "../img/clock.png",
+        "../img/clock2.png",
         "../img/xox.png",
         "../img/rock-paper.png",
         "../img/movie.png",
         "../img/pinterest.png",
-        "../img/medi.png"
+        "../img/medi2.png",
+        "../img/finder.png",
+        "../img/quiz.png"
     ]
-    for(let i = 0; i < 14 ; i++){
-        let project_div= `
-        <div class="content">
-            <img src=${pics[i]} alt="">
-            <h3 class="title-content">${name[i]}</h3>
+    // i didn't add "../img/todo.png" , "Todo List", "https://github.com/MucahitGed/todo-app-react","https://todo-react-ap.netlify.app/",
+    
+    for(let i = 0; i < 12 ; i++){
+        let content = document.createElement('div')
+        content.classList.add('content')
+
+        let content_inside = document.createElement('div')
+        content_inside.classList.add('content_inside')
+        content_inside.innerHTML = `
+        <h3 class="title-content">${name[i]}</h3>
           <div class="buttons">
                 <a href=${links[i]} class="visit-btn" target="_blank">Visit</a>
                 <a href=${codes[i]} class="code-btn" target="_blank">Code</a>
           </div>
-        </div>
         `
-        project_content.insertAdjacentHTML('beforeend' , project_div)
         
+        content.innerHTML= `
+            <img src=${pics[i]} alt="">
+        `
+        // project_content.insertAdjacentHTML('beforeend' , content)
+        project_content.appendChild(content)
+        
+        content.addEventListener("mouseover" , ()=>{
+            
+            content.appendChild(content_inside)
+        })
+        content.addEventListener("mouseleave" , ()=>{
+            
+            content.removeChild(content_inside)
+            
+        })
     }
-    
-
+   
+   
     
 }
 

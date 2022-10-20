@@ -154,22 +154,15 @@ span{
 }
 .projects-header{
     position: absolute;
-    top: 75rem;
+    top: 80rem;
 }
 /* fair good weak */
 
-/*projects*/
-.project-bg{
-    position: absolute;
-    background: var(--cyber-color);
-    height: 100%;
-    width: 100%;
-    filter: blur(15px);
-}
+
 .projects{
-    height: 100vh;
-    width: 100%;
-    
+    height: 200vh;
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.9);
 }
 .projects-content{
     display: flex;
@@ -180,34 +173,27 @@ span{
     width: 100%;
     filter: brightness(10px);
 }
-/* .projects-content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #fff;
-    height: 25rem;
-    width: 25rem;
-    filter: blur(0);
-    margin: 10px;
-} */
+
 
 .projects-content .content{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    height: 25rem;
-    width: 25rem;
+    height: 50vh;
+    width: 33.3%;
     filter: blur(0);
-    margin: 10px;
-    color: var(--light-grey);
+    color: #fff;
 }
-.projects-content .content:hover{
-    transform: scale(1.75); 
-    filter: blur(0);
-    z-index: 1;
+
+.projects-content .content .content_inside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
 }
+
 .projects-content .content img{
     position: absolute;
     height: 100%;
@@ -216,36 +202,42 @@ span{
     background-size: contain;
     background-repeat: no-repeat;
 }
-.projects-content .content h3{
+.projects-content .content .title-content{
+    display: block;  
     margin-top: 3rem;
-    font-size: 1.6rem;
+    font-size: 3.5rem;
     z-index: 5;
+    background-color:rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
 .projects-content .content .buttons{
+    display: block;  
     margin-bottom: 3rem;
     font-size: 1.6rem;
     z-index: 5;
 }
+
 .projects-content .content .buttons .visit-btn{
-    padding: 8px 15px;
-    margin: 10px;
+    padding: 1rem 4rem;
+    margin: 2rem;
     background-color: var(--cyber-color);
     border-radius: 5px;
     color: #fff;
 }
 .projects-content .content .buttons .code-btn{
-    padding: 8px 15px;
+    padding: 1rem 4rem;
+    margin: 2rem;
     background-color: var(--light-grey);
-    margin: 10px;
     border-radius: 5px;
     color: #fff;
 }
 .projects-content .content .buttons .visit-btn:hover{
-    transform: scale(.90);
+    background-color: #002D62;
 }
 .projects-content .content .buttons .code-btn:hover{
-    transform: scale(.96);
+    background-color: #808080;
 }
+
 /*footer*/
 .contact{
     width: 100vw;
