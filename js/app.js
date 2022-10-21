@@ -41,7 +41,9 @@ let skill_icon = [
     {s_idx:7 , icon : "git-alt" , name: "Git" ,  brands:"brands"},
     {s_idx:8 , icon : "type-script" , name: "useless" ,  brands:"brands"}, 
     {s_idx:9 , icon : "mongoDb" , name: "useless" ,  brands:"brands"},
-    {s_idx:10 , icon : "nodejs" , name: "useless" ,  brands:"brands"}
+    {s_idx:10 , icon : "nodejs" , name: "useless" ,  brands:"brands"},
+    {s_idx:11 , icon : "figma" , name: "Figma" ,  brands:"brands"},
+    {s_idx:12 , icon : "wordpress" , name: "Wordpress" ,  brands:"brands"}
 ]
 skills.forEach((skill) => {
     skill.addEventListener(("mouseover"), (e)=> {
