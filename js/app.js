@@ -5,7 +5,7 @@ const main = document.querySelector(".main")
 const skills = document.querySelectorAll(".skill")
 const project_content = document.querySelector(".projects-content");
 const contact_contents = document.querySelectorAll(".contact-content")
-const resume = document.querySelector(".resume");
+const resumes = document.querySelectorAll(".resume");
 let load = 0;
 
 const int = setInterval(()=>{
@@ -20,8 +20,10 @@ const int = setInterval(()=>{
     }
 } , 40)
 
-resume.addEventListener('click' , ()=>{
-    window.open('../img/png2pdf.pdf')
+resumes.forEach(resume =>{
+    resume.addEventListener('click' , ()=>{
+        window.open('../img/mucocv.pdf')
+    })
 })
 
 let timeout_p = setTimeout(() => {
