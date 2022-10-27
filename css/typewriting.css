@@ -3,7 +3,12 @@
     white-space: nowrap;
     overflow: hidden;
   }
-  .home-content h1:nth-child(1) {
+  .home-content h2{
+    border-right: .10em solid black;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+.home-content h1:nth-child(1) {
     width: 9em;
     -webkit-animation: type 2s steps(18, end);
     animation: type 2s steps(18, end);
@@ -21,7 +26,26 @@
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }
-  
+  .home-content .h2-1{
+    width: 51em;
+    opacity: 0;
+    -webkit-animation: type3 7s steps(92, end);
+    animation: type3 7s steps(92, end);
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+} 
+.home-content .h2-2{
+    width: 26.5em;
+    opacity: 0;
+    -webkit-animation: type4 4s steps(50, end);
+    animation: type4 4s steps(50, end);
+    -webkit-animation-delay: 11s;
+    animation-delay: 11s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+} 
 
   
   @keyframes type {
@@ -68,6 +92,72 @@
   }
   
   @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+      border-right: .15em solid white;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid var(--cyber-color);
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  @keyframes type3 {
+    0% {
+      width: 0;
+      border-right: .15em solid white;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid var(--cyber-color);
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type3{
+    0% {
+      width: 0;
+      border-right: .15em solid white;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid var(--cyber-color);
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  @keyframes type4 {
+    0% {
+      width: 0;
+      border-right: .15em solid white;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid var(--cyber-color);
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type4{
     0% {
       width: 0;
       border-right: .15em solid white;

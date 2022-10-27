@@ -71,24 +71,24 @@
 span{
     color: var(--sky-blue);
 }
-.home-content-title h2{
-    width: 75%;
-    margin: 40px;
+.home-content-title .h2-1{
+    width: 100%;
     font-size: 2.4rem;
     letter-spacing: 2px;
     line-height: 35px;
     transition: all 1s linear;
-    visibility: hidden;
-    animation: delaying2 5s;
+    margin: 40px 0 5px 0;
 }
-@keyframes delaying2{
-    0%{
-        margin: -40px;
-    }
-    100%{
-        margin: 40px;
-    }
+.home-content-title .h2-2{
+    width: 100%;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    line-height: 35px;
+    transition: all 1s linear;
+    
 }
+
+
 /*skills*/
 .skills{
     position: relative;

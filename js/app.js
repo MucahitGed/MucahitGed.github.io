@@ -18,7 +18,7 @@ const int = setInterval(()=>{
         body.style.backgroundColor = "white"
         main.style.display = "flex";
     }
-} , 40)
+} , 0)
 
 resumes.forEach(resume =>{
     resume.addEventListener('click' , ()=>{
@@ -28,7 +28,7 @@ resumes.forEach(resume =>{
 
 let timeout_p = setTimeout(() => {
     document.querySelector(".home-header").style.visibility = "visible";
-    document.querySelector(".home-content-title h2").style.visibility = "visible";
+    
 }, 2000);
 
 
@@ -129,7 +129,7 @@ function projectPrinter(){
         "Rock-Paper-Scissors",
         "Movie App",
         "Pinterest Clone",
-        "Meditation App",
+        "Recipe App",
         "Github Finder",
         "Quiz App"
     ]
@@ -144,7 +144,7 @@ function projectPrinter(){
         "https://github.com/MucahitGed/Rock-paper-scissors",
         "https://github.com/MucahitGed/Movie-App",
         "https://github.com/MucahitGed/Pinterest-Clone",
-        "https://github.com/MucahitGed/meditatin-app-with-js",
+        "https://github.com/MucahitGed/recipe-search-app-w-typescript-react",
         "https://github.com/MucahitGed/Github-Account-Finder-App",
         "https://github.com/MucahitGed/react-quiz"
     ]
@@ -158,7 +158,7 @@ function projectPrinter(){
         "https://rock-paperr.netlify.app",
         "https://movie-aapp.netlify.app",
         "https://pinterest-clonee.netlify.app",
-        "https://meditation-ap.netlify.app/",
+        "https://recipe-search-app-typescript.netlify.app",
         "https://github-account-finder-app.netlify.app/",
         "https://reactjs-quizz.netlify.app/"
     ]
@@ -171,9 +171,9 @@ function projectPrinter(){
         "../img/clock2.png",
         "../img/xox.png",
         "../img/rock-paper.png",
-        "../img/movie.png",
-        "../img/pinterest.png",
-        "../img/medi2.png",
+        "../img/movie2.png",
+        "../img/pinterest2.png",
+        "../img/recipe1.png",
         "../img/finder.png",
         "../img/quiz.png"
     ]
