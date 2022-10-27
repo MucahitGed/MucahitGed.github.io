@@ -8,11 +8,13 @@
     height: 100vh;
     width: 100vw;
     color: white;
+    background-image: url('../img/11favoribetter.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 500px;
+    background-repeat: no-repeat;
 }
-.img{
-    width: 100vw;
-    height: 100vh;
-}
+
 .home::before{
     content: "";
     height: 100vh;
