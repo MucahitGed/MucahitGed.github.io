@@ -18,7 +18,7 @@ const int = setInterval(()=>{
         body.style.backgroundColor = "white"
         main.style.display = "flex";
     }
-} , 0)
+} , 40)
 
 resumes.forEach(resume =>{
     resume.addEventListener('click' , ()=>{
