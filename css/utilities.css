@@ -56,6 +56,27 @@ ul li a:hover{
 a{
     text-decoration: none;
 }
+@media (min-width: 1px) and (max-width: 510px){
+    html{
+        font-size: 2px;
+    }
+    .skills-content{
+        height: 80vh;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .skill{
+        height: 5rem;
+        
+    }
+ }
+
+@media (min-width: 510px) and (max-width: 715px){
+    html{
+        font-size: 3px;
+    }
+
+ }
 @media (max-width: 768px){
     html{
         font-size: 7px;

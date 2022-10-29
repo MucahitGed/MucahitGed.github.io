@@ -47,7 +47,6 @@
     animation-fill-mode: forwards;
 } 
 
-  
   @keyframes type {
     0% {
       width: 0;

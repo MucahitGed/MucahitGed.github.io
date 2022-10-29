@@ -121,21 +121,22 @@ span{
     display: flex;
     align-items: center;
     color: #fff;
-    width: 200px;
-    height: 60x;
-    margin: 10px 20px;
+    width: 20rem;
+    height: 7rem;
+    margin: 1rem 2rem;
     background-color: #000;
     border-radius: 10px;
     transition: all .5s linear;
     cursor: pointer;
     box-shadow: rgba(135,206,235, 0.25) 0px 14px 28px, rgba(135,206,235, 0.22) 0px 8px 8px;
+
 }
 .skills-content .skill .level{
-    height: 60px;
+    height: 7rem;
     background-color: var(--sky-blue);
     z-index: 5;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 2.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +151,7 @@ span{
 }
 
 .skills-content .skill .skill-name{
-    font-size:24px;
+    font-size:2.4rem;
     margin-left: 10px;
     padding: 20px 0;
 }
