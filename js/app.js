@@ -41,9 +41,9 @@ let skill_icon = [
     {s_idx:5 , icon : "react" , name: "React" ,  brands:"brands"} ,
    {s_idx:6 , icon : "sass" , name: "Sass" ,  brands:"brands"} , 
     {s_idx:7 , icon : "git-alt" , name: "Git" ,  brands:"brands"},
-    {s_idx:8 , icon : "type-script" , name: "useless" ,  brands:"brands"}, 
+    {s_idx:8 , icon : "type-script" , name: "Typescript" ,  brands:"brands"}, 
     {s_idx:9 , icon : "mongoDb" , name: "useless" ,  brands:"brands"},
-    {s_idx:10 , icon : "nodejs" , name: "useless" ,  brands:"brands"},
+    {s_idx:10 , icon : "node-js" , name: "NodeJS" ,  brands:"brands"},
     {s_idx:11 , icon : "figma" , name: "Figma" ,  brands:"brands"},
     {s_idx:12 , icon : "wordpress" , name: "Wordpress" ,  brands:"brands"}
 ]
@@ -59,14 +59,19 @@ skills.forEach((skill) => {
             <div class="level">75%</div>`
             e.target.children[0].style.width = "75%"
             console.log(e.target);
+        }if(e.target.classList.contains("fair2")){
+            e.target.innerHTML= `
+            <div class="level">75%</div>`
+            e.target.children[0].style.width = "75%"
         }if(e.target.classList.contains("mid")){
             e.target.innerHTML= `
             <div class="level">50%</div>`
             e.target.children[0].style.width = "50%"
-        }if(e.target.classList.contains("weak-svg")){
+        }
+        if(e.target.classList.contains("fair-svg")){
             e.target.innerHTML= `
-            <div class="level">25%</div>`
-            e.target.children[0].style.width = "25%"
+            <div class="level">75%</div>`
+            e.target.children[0].style.width = "75%"
         }if(e.target.classList.contains("weak")){
             e.target.innerHTML= `
             <div class="level">25%</div>`
@@ -85,13 +90,20 @@ skills.forEach((skill, idx) => {
         }if(e.target.classList.contains("fair")){
             s_idx = idx;
             e.target.innerHTML=
-            `<i class="fa-brands fa-${skill_icon[idx].icon} fa-4x"></i>
+            `<i class="fa-${skill_icon[idx].brands} fa-${skill_icon[idx].icon} fa-4x"></i>
              <div class="skill-name">${skill_icon[idx].name}</div>`
-        }if(e.target.classList.contains("mid")){
+        }if(e.target.classList.contains("fair2")){
             e.target.innerHTML=
             `<img src="https://img.icons8.com/color/48/000000/typescript.png" />
             <div class="skill-name">TypeScript</div>`
-        }if(e.target.classList.contains("weak-svg")){
+        }if(e.target.classList.contains("mid")){
+            s_idx = idx;
+            e.target.innerHTML=`
+            <i class="fa-${skill_icon[idx].brands} fa-${skill_icon[idx].icon} fa-4x"></i>
+            <div class="skill-name">${skill_icon[idx].name}</div>
+            `
+        }
+        if(e.target.classList.contains("fair-svg")){
             e.target.innerHTML=
             `<svg
             style="color: blue"

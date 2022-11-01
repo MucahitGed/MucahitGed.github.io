@@ -140,7 +140,6 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .skills-content .skill i{
     color: var(--cyber-color);
