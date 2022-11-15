@@ -10,8 +10,8 @@
   }
 .home-content h1:nth-child(1) {
     width: 9em;
-    -webkit-animation: type 2s steps(18, end);
-    animation: type 2s steps(18, end);
+    -webkit-animation: type 2s steps(26, end);
+    animation: type 2s steps(26, end);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }
@@ -29,6 +29,7 @@
   .home-content .h2-1{
     /* width: 34em; */
     width: 100%;
+
     opacity: 0;
     -webkit-animation: type3 7s steps(92, end);
     animation: type3 7s steps(92, end);
