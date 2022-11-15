@@ -27,7 +27,8 @@
     animation-fill-mode: forwards;
   }
   .home-content .h2-1{
-    width: 51em;
+    /* width: 34em; */
+    width: 100%;
     opacity: 0;
     -webkit-animation: type3 7s steps(92, end);
     animation: type3 7s steps(92, end);
@@ -37,7 +38,8 @@
     animation-fill-mode: forwards;
 } 
 .home-content .h2-2{
-    width: 26.5em;
+    /* width: 26.5em; */
+    width: 80%;
     opacity: 0;
     -webkit-animation: type4 4s steps(50, end);
     animation: type4 4s steps(50, end);
